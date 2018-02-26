@@ -18,4 +18,4 @@ angular
         component: 'login'
       });
     $urlRouterProvider.otherwise('/auth/login');
-  })
+  });
