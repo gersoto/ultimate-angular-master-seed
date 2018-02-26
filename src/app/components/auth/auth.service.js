@@ -25,7 +25,7 @@ function AuthService($firebaseAuth) {
       .$waitForSignIn().then(onSignIn);
   };
   this.isAuthenticated = function () {
-    !!authData; // null || user
+    return !!authData; // null || user
   };
   this.getUser = function () {
     if (authData) {
